@@ -63,5 +63,5 @@ function outer1() {
 let nameStr = outer1();
 
 console.log(
-  nameStr("Names are-")("Akshay,")("Khurana,")("Manisha,")("Rahul")()
+  nameStr("Names are:-")("Akshay,")("Khurana,")("Manisha,")("Rahul")()
 );

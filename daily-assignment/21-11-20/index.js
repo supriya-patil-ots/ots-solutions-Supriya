@@ -34,17 +34,28 @@
 // whereAmI(17.385, 78.4867);
 
 //using .then function
-const whereAmI = (lat, long) => {
-  try {
-    const data = fetch(
-      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${long}&localityLanguage=en`
-    )
-      .then((data) => {
-        return data.json();
-      })
-      .then((res) => console.log(`You are in ${res.city}`));
-  } catch {
-    (err) => console.log(err, "error");
-  }
-};
-whereAmI(17.385, 78.4867);
+function getData() {
+  let location = navigator.geolocation.getCurrentPosition((data) => {
+    let lat = data.coords.latitude;
+    let long = data.coords.longitude;
+
+    async function whereAmI(lat, long) {
+      try {
+        const data = await fetch(
+          `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${long}&localityLanguage=en`
+        );
+        if (!data.ok)
+          throw new error("Please provide correct longitude and lattitude");
+        const result = await data.json();
+        console.log(
+          `You are in ${result.city} in State: ${result.localityInfo.administrative[1].name}`
+        );
+      } catch (err) {
+        console.log(err, "error");
+      }
+    }
+    whereAmI(lat, long);
+  });
+  return location;
+}
+console.log(getData());

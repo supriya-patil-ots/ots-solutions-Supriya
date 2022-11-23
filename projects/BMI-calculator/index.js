@@ -6,8 +6,9 @@ function calculateBmi() {
   let bmiResult = weightInput / (heightInput * heightInput);
   bmiResult = Math.round(bmiResult * 100) / 100;
   document.getElementById("bmiResult").innerHTML = bmiResult;
-  lastResults.push(bmiResult);
-  document.getElementById("lastResult").innerHTML = lastResults;
+  resultWithSpase = " " + bmiResult;
+  lastResults.push(resultWithSpase);
+  document.getElementById("lastResult").innerHTML = lastResults + " ";
 
   if (heightInput <= 0 || weightInput <= 0) {
     alert("Enter valid number");
@@ -22,11 +23,12 @@ function calculateBmi() {
   }
 
   //code for display message//
-  if (
-    (bmiResult < 18.5 && bmiResult > 0) ||
-    (bmiResult > 24.9 && bmiResult < 100)
-  ) {
-    const msg = "Awww!!! You are unfit";
+  if (bmiResult < 18.5 && bmiResult > 0) {
+    const msg = "You are under Weight";
+    document.getElementById("bmiMsg").innerHTML = msg;
+    document.getElementById("bmiMsg").style.color = "red";
+  } else if (bmiResult > 24.9 && bmiResult < 100) {
+    const msg = "You are over Weight";
     document.getElementById("bmiMsg").innerHTML = msg;
     document.getElementById("bmiMsg").style.color = "red";
   } else if (bmiResult >= 18.5 && bmiResult <= 24.9) {

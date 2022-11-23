@@ -13,21 +13,21 @@
       <div class="container bmi">
         <h1>BMI calculator</h1>
         <form>
-          <div class="height-box">
-            <label>Weight</label>
-            <input
-              type="text"
-              id="weight"
-              placeholder="Enter Weight in Kg"
-              required
-            />
-          </div>
           <div class="width-box">
             <label>Height</label>
             <input
               type="text"
               id="height"
               placeholder="Enter Height in Meter"
+              required
+            />
+          </div>
+          <div class="height-box">
+            <label>Weight</label>
+            <input
+              type="text"
+              id="weight"
+              placeholder="Enter Weight in Kg"
               required
             />
           </div>
@@ -41,7 +41,9 @@
           Calculate BMI
         </button>
         <p class="result">BMI=<span id="bmiResult"></span></p>
-        <p class="lastBmiArray">LastBMIResults=<span id="lastResult"></span></p>
+        <p class="lastBmiArray">
+          Last BMI Queries:<span id="lastResult"> </span>
+        </p>
 
         <h2 id="bmiMsg"></h2>
       </div>

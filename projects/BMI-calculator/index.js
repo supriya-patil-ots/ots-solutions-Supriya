@@ -5,7 +5,7 @@ function calculateBmi() {
 
   let bmiResult = weightInput / (heightInput * heightInput);
   bmiResult = Math.round(bmiResult * 100) / 100;
-  document.getElementById("bmiResult").innerHTML = bmiResult;
+  document.getElementById("bmiResult").innerHTML = "BMI:" + bmiResult;
   resultWithSpase = " " + bmiResult;
   lastResults.push(resultWithSpase);
   document.getElementById("lastResult").innerHTML = lastResults + " ";

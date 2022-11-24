@@ -1,12 +1,6 @@
 var min = 00;
 var sec = 00;
 
-// var minute = document.getElementById("minute");
-// var second = document.getElementById("second");
-// var startButton = document.getElementById("start");
-// var stopButton = document.getElementById("stop");
-// var resetButton = document.getElementById("reset");
-
 var interval;
 function startTimer() {
   var minute = document.getElementById("minute");

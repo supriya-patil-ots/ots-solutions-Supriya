@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+.stopwatch {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+  background-color: burlywood;
+}
+
+.button-group button {
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+#start {
+  background-color: green;
+}
+
+#stop {
+  background-color: gray;
+}
+#reset {
+  background-color: blue;
+}
+.numbers {
+  font-size: 24px;
+}

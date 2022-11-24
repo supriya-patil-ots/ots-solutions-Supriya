@@ -62,7 +62,7 @@ const onceFunction = (function (a, b) {
       console.log(resultSum);
     };
   }
-  throw "noooooo";
+  throw "error";
 })();
 
 onceFunction(2, 3);

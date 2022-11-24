@@ -1,10 +1,3 @@
-var firstValue = document.getElementById("fvalue").value;
-var secondValue = document.getElementById("svalue").value;
-var thirdValue = document.getElementById("tvalue").value;
-var result = document.getElementById("result");
-
-var color;
-
 function fetchValue() {
   var firstValue = document.getElementById("fvalue").value;
   document.getElementById("red").innerHTML = firstValue + ",";

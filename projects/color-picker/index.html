@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="color">
+        <h1>Color Picker</h1>
+        <lavel>Red</lavel>
+        <input
+          type="range"
+          id="fvalue"
+          min="0"
+          max="255"
+          onClick="fetchValue()"
+        />
+        <lavel>Green</lavel>
+        <input
+          type="range"
+          id="svalue"
+          min="0"
+          max="255"
+          onClick="fetchValue()"
+        />
+        <lavel>Blue</lavel>
+        <input
+          id="tvalue"
+          type="range"
+          min="0"
+          max="255"
+          onClick="fetchValue()"
+        />
+        <p id="result">
+          <span id="red"></span><span id="green"></span><span id="blue"></span>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

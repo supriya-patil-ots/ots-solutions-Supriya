@@ -1,0 +1,32 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto";
+}
+.color {
+  width: 50%;
+
+  background-color: aqua;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px 0px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+}
+
+#result {
+  padding: 10px 20px;
+  height: 20px;
+  width: 30%;
+  box-shadow: 0px 0px 6px #c5c5c5;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}

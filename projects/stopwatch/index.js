@@ -28,7 +28,7 @@ function startTimer() {
 
 function onStart() {
   var stopButton = document.getElementById("stop");
-  interval = setInterval(startTimer, 100);
+  interval = setInterval(startTimer, 1000);
   stopButton.disabled = false;
   stopButton.style.backgroundColor = "red";
 }

@@ -52,18 +52,18 @@ console.log(resultOfName);
 // / task 1
 // call once function
 // desc: create a function which can't be called more than once
-const onceFunction = (function (a, b) {
-  var invoked = false;
-  if (!invoked) {
-    return function sum(a, b) {
-      invoked = true;
-      let resultSum;
-      resultSum = a + b;
-      console.log(resultSum);
-    };
-  }
-  throw "error";
-})();
+// const onceFunction = (function (a, b) {
+//   var invoked = false;
+//   if (!invoked) {
+//     return function sum(a, b) {
+//       invoked = true;
+//       let resultSum;
+//       resultSum = a + b;
+//       console.log(resultSum);
+//     };
+//   }
+//   throw "error";
+// })();
 
-onceFunction(2, 3);
-onceFunction(2, 4);
+// onceFunction(2, 3);
+// onceFunction(2, 4);

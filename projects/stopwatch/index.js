@@ -1,5 +1,5 @@
-var min = "0";
-var sec = "00";
+var min = 0;
+var sec = 0;
 
 var interval;
 function startTimer() {
@@ -13,24 +13,25 @@ function startTimer() {
   if (sec < 10) {
     second.innerHTML = "0" + sec;
   }
-  if (sec > 20) {
+  if (sec > 15) {
     min += 1;
     console.log(min);
     minute.innerHTML = min;
-    sec = 00;
+    sec = "00";
+    second.innerHTML = sec;
+  }
+
+  if (min < 60) {
+    minute.innerHTML = min;
+  }
+  if ((min >= 59) & (sec >= 59)) {
+    clearInterval(interval);
+    minute.innerHTML = min;
     second.innerHTML = sec;
   }
   if (min < 10) {
     minute.innerHTML = "0" + min;
   }
-  if (min < 60) {
-    minute.innerHTML = min;
-  }
-  //   if ((min >= 59) & (sec >= 59)) {
-  //     clearInterval(interval);
-  //     minute.innerHTML = min;
-  //     second.innerHTML = sec;
-  //   }
 }
 
 function onStart() {
@@ -38,6 +39,7 @@ function onStart() {
   interval = setInterval(startTimer, 1000);
   stopButton.disabled = false;
   stopButton.style.backgroundColor = "red";
+  stopButton.style.cursor = "pointer";
 }
 
 function onStopt() {
@@ -52,8 +54,8 @@ function onReset() {
   stopButton.style.backgroundColor = "gray";
   stopButton.disabled = false;
 
-  min = 00;
-  sec = 00;
-  minute.innerHTML = sec;
-  second.innerHTML = min;
+  min = 0;
+  sec = 0;
+  minute.innerHTML = "0" + min;
+  second.innerHTML = "0" + sec;
 }

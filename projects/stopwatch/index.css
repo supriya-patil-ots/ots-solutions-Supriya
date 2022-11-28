@@ -24,13 +24,23 @@
 #start {
   background-color: green;
 }
+#start:hover {
+  cursor: pointer;
+}
 
 #stop {
   background-color: gray;
 }
 #reset {
   background-color: blue;
+  cursor: pointer;
 }
 .numbers {
   font-size: 24px;
+}
+#stop {
+  cursor: none;
+}
+#reset {
+  cursor: pointer;
 }

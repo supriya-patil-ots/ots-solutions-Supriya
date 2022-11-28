@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Toc Toe</title>
     <link href="index.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="tic">
-        <h1>Tic Tac Toe</h1>
         <div class="gamebox">
+          <h1>Tic Tac Toe</h1>
           <input type="text" id="t1" />
           <input type="text" id="t2" />
           <input type="text" id="t3" />
@@ -24,8 +25,16 @@
           <input type="text" id="t8" />
           <input type="text" id="t9" />
         </div>
+        <div class="extra-data">
+          <div class="info">
+            <span id="gameInfo">Turn for X</span>
+            <button type="submit" class="reset-btn">Reset</button>
+          </div>
+          <div class="gif-img">
+            <img src="cute-adorable.gif" class="excitement-img" />
+          </div>
+        </div>
       </div>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

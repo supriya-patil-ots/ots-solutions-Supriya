@@ -5,13 +5,53 @@
   font-family: Roboto;
   font-size: 40px;
   color: #fff;
+  margin: 50px;
+  padding: 50px;
 }
 .tic {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   width: 70%;
-  height: 100vh;
   background-color: skyblue;
+  padding: 50px;
+}
+.gamebox {
+  text-align: center;
+}
+input {
+  width: 5%;
+  text-align: center;
+  padding: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#gameInfo {
+  font-size: 16px;
+  margin: 10px;
+}
+.reset-btn {
+  padding: 8px 15px;
+  background-color: cadetblue;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.excitement-img {
+  height: 100px;
+  height: 100px;
+  width: 90%;
+  margin-top: 20px;
+}
+.extra-data {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  flex-direction: column;
 }

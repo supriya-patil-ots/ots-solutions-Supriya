@@ -27,23 +27,20 @@ btn.addEventListener("click", function () {
 
     arr.push(inputValue);
     console.log(arr);
-    var i;
-    for (i = 0; i < arr.length; i++) {}
-
-    console.log(i);
-    sessionStorage.setItem(i, inputValue);
+    localStorage.setItem("tasks", JSON.stringify(arr));
   }
 });
 
 var persist = document.getElementById("persist");
 
 persist.addEventListener("click", function () {
-  for (i = 0; i <= sessionStorage.length; i++) {
-    let data = sessionStorage.getItem(i);
-    console.log(data);
+  let data = JSON.parse(localStorage.getItem("tasks"));
+  arr = [...data];
+  console.log(data);
+  for (let i = 0; i < data.length; i++) {
     var listItemSessionData = document.createElement("li");
+    listItemSessionData.innerText = data[i];
     list.appendChild(listItemSessionData);
-    listItemSessionData.innerText = data;
   }
 });
 var clrBtn = document.getElementById("clear");

@@ -48,6 +48,7 @@ input {
   height: 100px;
   width: 90%;
   margin-top: 20px;
+  display: none;
 }
 .extra-data {
   display: flex;

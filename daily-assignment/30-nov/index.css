@@ -1,0 +1,7 @@
+.box1 {
+  border: 1px solid;
+  padding: 50px;
+}
+.content {
+  display: grid;
+}

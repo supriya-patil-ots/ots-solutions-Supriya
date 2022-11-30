@@ -10,5 +10,4 @@ div {
 .content {
   display: grid;
   grid-template-columns: auto auto;
-  height: 50px;
 }

@@ -1,7 +1,14 @@
+div {
+  border: 1px solid;
+  text-align: center;
+}
+
 .box1 {
   border: 1px solid;
   padding: 50px;
 }
 .content {
   display: grid;
+  grid-template-columns: auto auto;
+  height: 50px;
 }

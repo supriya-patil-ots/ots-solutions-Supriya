@@ -13,8 +13,8 @@ function App() {
       <MenuBar />
       <Routes>
         <Route path="/" element={<div>Home</div>} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/ServiceDetails" element={<ServiceDetails />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/:id" element={<ServiceDetails />} />
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/trainees" element={<TraineesComponent />} />
       </Routes>

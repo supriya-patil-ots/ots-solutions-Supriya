@@ -7,7 +7,7 @@ const ContactUs = () => {
       <div className="heading">
         <div className="mb-5">
           <h3 className="heading">
-            <h3>Contact-Us</h3>
+            <h2>Contact-Us</h2>
           </h3>
         </div>
 

@@ -1,21 +1,26 @@
 import React from "react";
 import { Card } from "semantic-ui-react";
 import ServicesData from "./ServicesData";
+import { Link } from "react-router-dom";
 import "./main.css";
 
 const Services = () => {
-  console.log("serv", ServicesData);
   return (
     <>
-      <h2>Services</h2>
+      <div className="service-page">
+        <h2>Services</h2>
+      </div>
       <div className="services-gallery">
-        {ServicesData.map((item) => {
+        {ServicesData.map((service, index) => {
           return (
-            <Card
-              image={item.img}
-              header={item.service}
-              description={item.describe}
-            />
+            <Link to={`/services/${index}`}>
+              <Card
+                key={index}
+                image={service.img}
+                header={service.service}
+                description={service.describe}
+              />
+            </Link>
           );
         })}
       </div>

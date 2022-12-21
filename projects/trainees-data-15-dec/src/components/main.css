@@ -15,6 +15,7 @@
 }
 .ui.card {
   margin: 20px !important;
+  min-height: 350px !important;
 }
 .ui.card > .image,
 .ui.cards > .card > .image {
@@ -23,4 +24,22 @@
 .ui.card > .image > img,
 .ui.cards > .card > .image > img {
   height: 100% !important;
+}
+.service-details h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.service-details {
+  margin: 20px;
+  padding: 50px;
+}
+.service-details-page p {
+  padding-right: 30px;
+  font-size: 15px;
+}
+.service-page {
+  text-align: center;
+  padding: 50px;
+  text-transform: uppercase;
 }

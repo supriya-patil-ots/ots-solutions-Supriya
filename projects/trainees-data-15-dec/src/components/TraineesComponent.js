@@ -151,7 +151,7 @@ const TraineesComponent = () => {
 
   return (
     <>
-      <Header as="h1">Trainees</Header>
+      <Header as="h2">TRAINEES</Header>
       <div
         style={{
           display: "flex",

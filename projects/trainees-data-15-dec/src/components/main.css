@@ -6,3 +6,21 @@
   cursor: pointer;
   color: blue;
 }
+
+.services-gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80%;
+  margin: 0 auto;
+}
+.ui.card {
+  margin: 20px !important;
+}
+.ui.card > .image,
+.ui.cards > .card > .image {
+  height: 170px;
+}
+.ui.card > .image > img,
+.ui.cards > .card > .image > img {
+  height: 100% !important;
+}

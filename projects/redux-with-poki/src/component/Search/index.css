@@ -1,0 +1,40 @@
+.searchinput {
+  padding: 5px;
+}
+.search {
+  margin: 20px;
+}
+.submit {
+  padding: 7px;
+  background-color: green;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.submit:disabled {
+  padding: 7px;
+  background-color: rgb(133, 133, 133);
+  border: none;
+  color: #000;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: default;
+}
+
+.reset {
+  padding: 7px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin: 10px;
+}
+#pokemons {
+  padding: 5px;
+  border-radius: 4px;
+}
+option {
+  background-color: aquamarine;
+}

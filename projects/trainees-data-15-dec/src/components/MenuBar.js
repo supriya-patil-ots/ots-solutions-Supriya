@@ -18,6 +18,12 @@ const MenuBar = () => {
       <Menu.Item as={Link} to="/trainees">
         trainees
       </Menu.Item>
+      <Menu.Item as={Link} to="/Services">
+        Services
+      </Menu.Item>
+      <Menu.Item as={Link} to="/ServiceDetails">
+        ServiceDetails
+      </Menu.Item>
       <Menu.Item as={Link} to="/contactus">
         contact us
       </Menu.Item>
